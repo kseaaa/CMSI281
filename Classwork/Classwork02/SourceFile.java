@@ -17,7 +17,7 @@ public class SourceFile {
     
     public void SourceFile( String inputFile ) throws IOException {
         this.fileName = inputFile;
-        BufferedReader lineByLine = new BufferedReader(new FileReader(inputFile));
+        BufferedReader lineByLine = new BufferedReader( new FileReader( inputFile ) );
         try {
             String line = lineByLine.readLine();
             while (line != null) {
