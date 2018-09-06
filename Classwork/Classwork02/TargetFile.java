@@ -10,8 +10,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 
 public class TargetFile {
-
-    private String filePath = "";
  
     public TargetFile( String text, String path ) {
         try {
