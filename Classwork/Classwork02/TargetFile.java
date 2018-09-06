@@ -1,5 +1,5 @@
 /** 
- * A class to create a copy of a file given the file name.
+ * A class to create a copy of a file given the file name and text to include.
  * @author Kathryn Cole
  * @date September 5, 2018
  */
