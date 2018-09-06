@@ -4,7 +4,6 @@
  * @date September 5, 2018
  */
 
-
 package copiersupport;
 import java.io.FileReader;
 import java.io.BufferedReader;
@@ -12,24 +11,19 @@ import java.io.IOException;
 
 public class SourceFile {
 
-    private String fileAsString = "";
-    private String fileName = "";
+    private String fileContent = "";
     
-    public void SourceFile( String inputFile ) throws IOException {
-        this.fileName = inputFile;
-        BufferedReader lineByLine = new BufferedReader( new FileReader( inputFile ) );
+    public SourceFile( String filePath ) {
         try {
-            String line = lineByLine.readLine();
-            while (line != null) {
-                this.fileAsString += line + "\n";
-                line = lineByLine.readLine();
-            }
-        } finally {
-            lineByLine.close();
+            BufferedReader br = new BufferedReader( new FileReader( filePath ) );
+            this.fileContent = br.readLine();
+            br.close();
+        } catch( IOException ioe ) {
+            System.out.println("sourcefile threw an exception");
         }
     }
 
-    public String getFileAsString() {
-        return this.fileAsString;
+    public String getFileContent() {
+        return this.fileContent;
     }
 }
