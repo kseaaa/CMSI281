@@ -1,5 +1,5 @@
 /** 
- * A class to store the name of a file and its contents as Strings.
+ * A class to store the contents of a file as a String.
  * @author Kathryn Cole
  * @date September 5, 2018
  */
