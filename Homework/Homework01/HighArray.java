@@ -1,3 +1,9 @@
+/**
+ * A class to explore array organization
+ * @author Kathryn Cole
+ * @date September 15, 2018
+ */
+
 public class HighArray {
     private long[] a;
     private int nElems;
