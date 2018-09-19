@@ -1,3 +1,7 @@
+/**
+ * A class to test the IntLinkedList class.
+ */
+
 public class IntLinkedListTester {
 
       public static void main( String[] args ) {
