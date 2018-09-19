@@ -1,3 +1,7 @@
+/**
+ * A class to visualize linked lists. 
+ */
+
 public class IntLinkedList {
 
       private Node head;
