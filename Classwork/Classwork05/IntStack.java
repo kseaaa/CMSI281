@@ -1,3 +1,8 @@
+/** 
+ * A class to visualize stack organization using a linked list.
+ * @date September 26, 2018
+ */
+
 public class IntStack {
     
     IntLinkedList myStack;
@@ -22,24 +27,24 @@ public class IntStack {
 
     public static void main( String[] args ) {
         IntStack testStack = new IntStack();
-        testStack.push(19);
-        testStack.push(23);
-        testStack.push(29);
-        testStack.push(31);
-        testStack.push(37);
-        testStack.push(41);
-        testStack.push(43);
-        testStack.push(47);
-        testStack.push(51);
-        testStack.push(57);
-        System.out.println("top of the stack: " + testStack.peek());
-        System.out.println("removing the top thing: " + testStack.pop());
-        System.out.println("the top of the stack: " + testStack.peek());
-        System.out.println("removing the top thing: " + testStack.pop());
-        System.out.println("top of the stack: " + testStack.peek());
-        System.out.println("removing the top: " + testStack.pop());
-        System.out.println("top of the stack: " + testStack.peek());
-        testStack.push(testStack.pop() + testStack.pop());
-        System.out.println("the top of the stack: " + testStack.peek());
+        testStack.push( 19 );
+        testStack.push( 23 );
+        testStack.push( 29 );
+        testStack.push( 31 );
+        testStack.push( 37 );
+        testStack.push( 41 );
+        testStack.push( 43 );
+        testStack.push( 47 );
+        testStack.push( 51 );
+        testStack.push( 57 );
+        System.out.println( "top of the stack: " + testStack.peek() );
+        System.out.println( "removing the top thing: " + testStack.pop() );
+        System.out.println( "the top of the stack: " + testStack.peek() );
+        System.out.println( "removing the top thing: " + testStack.pop() );
+        System.out.println( "top of the stack: " + testStack.peek() );
+        System.out.println( "removing the top: " + testStack.pop() );
+        System.out.println( "top of the stack: " + testStack.peek() );
+        testStack.push( testStack.pop() + testStack.pop() );
+        System.out.println( "the top of the stack: " + testStack.peek() );
     }
 }
